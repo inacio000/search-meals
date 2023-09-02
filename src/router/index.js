@@ -19,6 +19,11 @@ const routes = [
                 component: Home,
             },
             {
+                path: "/by-name/:name?",
+                name: "byName",
+                component: SearchByName,
+            },
+            {
                 path: "/by-letter/:letter?",
                 name: "byLetter",
                 component: SearchByLetter,
@@ -34,13 +39,7 @@ const routes = [
     {
         path: '/guest',
         component: GuestLayout,
-        children: [
-            {
-                path: "/by-name/:name?",
-                name: "byName",
-                component: SearchByName,
-            },
-        ]
+        children: []
     }
 ];
 
