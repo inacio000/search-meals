@@ -22,8 +22,8 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
-import { computed } from '@vue/reactivity'
+import { computed, ref } from 'vue';
+// import { computed } from '@vue/reactivity'
 import store from '../store';
 
 const keyword = ref('');
